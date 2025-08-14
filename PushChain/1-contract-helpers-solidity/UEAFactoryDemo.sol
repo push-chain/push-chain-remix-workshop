@@ -12,10 +12,14 @@ interface IUEAFactory {
     function getOriginForUEA(
         address addr
     ) external view returns (UniversalAccountId memory account, bool isUEA);
+
+    function getUEAForOrigin(
+        UniversalAccountId memory _id
+    ) external view returns (address uea, bool isDeployed);
 }
 
-/// Demonstrates how to call getOriginForUEA() from a contract
-contract UEAOriginDemo {
+/// Demonstrates how to call getOriginForUEA() and getUEAForOrigin() from a contract
+contract UEAFactoryDemo {
     IUEAFactory constant UEAFACTORY =
         IUEAFactory(0x00000000000000000000000000000000000000eA);
 
@@ -27,5 +31,12 @@ contract UEAOriginDemo {
     {
         address caller = msg.sender;
         (originAccount, isUEA) = UEAFACTORY.getOriginForUEA(caller);
+    }
+
+    // Demonstrates how to call getUEAForOrigin() from a contract
+    function getUEAForOrigin(
+        UniversalAccountId memory account
+    ) external view returns (address uea, bool isDeployed) {
+        (uea, isDeployed) = UEAFACTORY.getUEAForOrigin(account);
     }
 }
