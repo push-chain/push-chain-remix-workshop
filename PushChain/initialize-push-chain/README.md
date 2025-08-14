@@ -1,26 +1,18 @@
-# Initialize Push Chain
+# UEA Origin Demo (Calling getOriginForUEA from Solidity)
 
-In this step, you'll initialize the Push Chain core client using ethers v6 and a Universal Signer so it runs directly in Remix.
+In this step, we will create a minimal Solidity contract that demonstrates how to call the Push Chain `UEAFactory.getOriginForUEA()` function from on-chain code.
 
 References:
 
-- Initialize Client: [Initialize Push Chain Client](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/initialize-push-chain-client/)
+- Tutorial example: [Universal Counter (contract calling getOriginForUEA)](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/)
 - Concepts: [Account types on Push Chain](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain)
 
-How to run:
+What the contract does:
 
-1. Open `PushChain/initialize-push-chain/initPushChain.js`.
-2. In the terminal, run `remix.execute()` to execute the current file.
-3. Check the Remix console for the output.
-
-What you'll see:
-
-- A Universal Signer derived from an ethers v6 signer.
-- A Push Chain client initialized for the Donut Testnet.
-- Logs for your Universal Execution Account on Push Chain and the origin account metadata.
+- Exposes a function named `discoverOrigin()` that calls `getOriginForUEA(msg.sender)` on the `UEAFactory` at `0x00000000000000000000000000000000000000eA`.
+- Returns the origin `UniversalAccountId` and a boolean indicating whether the caller (`msg.sender`) is a Universal Execution Account (UEA).
 
 Notes:
 
-- This example uses `ethers@6` and `@pushchain/core` via ESM, so no npm install is required in Remix.
-- The script creates a random wallet and connects to Sepolia public RPC as the origin chain; no transactions are sent.
-- If your environment blocks external CDNs, use a local Node.js setup and install packages with npm.
+- The `UEAFactory` address is the predeploy used by Push Chain.
+- If you want to compare with a more feature-rich example (including state changes), check the linked Universal Counter tutorial.
