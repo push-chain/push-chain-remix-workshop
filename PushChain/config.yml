@@ -11,8 +11,8 @@ steps:
   - name: Welcome
     path: 0-welcome
   - name: UEA Origin Demo (Calling getOriginForUEA from Solidity)
-    path: 1-GetUEAOrigin
+    path: 1-contract-helpers-solidity
   - name: Contract Helpers: UEAFactory Lookups
-    path: 2-contract-helpers
-  - name: Read State with viem / ethers
-    path: 3-read-state
+    path: 2-contract-helpers-js
+  - name: Universal Counter Example
+    path: 3-universal-counter-solidity
