@@ -9,14 +9,14 @@ tags:
   - PushChain
 steps:
   - name: Welcome
-    path: welcome
+    path: 0-welcome
   - name: Initialize Push Chain
     path: initialize-push-chain
   - name: Send Universal Transaction
-    path: send-universal-transaction
+    path: 1-send-universal-transaction
   - name: Contract Call via data
-    path: contract-call
+    path: 2-contract-helpers
   - name: Solidity UEAFactory Helper
-    path: uea-inspector
+    path: 3-uea-inspector
   - name: Read State with viem / ethers
-    path: read-state
+    path: 4-read-state
