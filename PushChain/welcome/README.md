@@ -8,12 +8,6 @@ Users can execute your Push Chain contracts from their home chain (for example, 
 
 For more information about Universal Transactions, see the [Universal Transactions](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/) documentation.
 
-## Prerequisites
-
-- Wallet connection: Connect an existing wallet (e.g., MetaMask, Phantom)
-- Network configuration: Point your tools to Push Chain (typically Testnet for workshops)
-- Testnet PC: Ensure you have testnet $PC to try transactions
-
 ## Account Types on Push Chain
 
 As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports standard Ethereum accounts:
@@ -35,3 +29,8 @@ As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports
   UOAs let you attribute activity back to the user’s home chain.
 
 Learn more in [Important Concepts → Account Types on Push Chain](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain).
+
+## Chain Configuration
+
+- Faucet: <https://faucet.push.org/>
+- Block Explorer: <https://donut.push.network/>
