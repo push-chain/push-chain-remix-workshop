@@ -19,29 +19,11 @@ Overview of the two helper scripts that interact with the on-chain `UEAFactory` 
   - `uea`: `address`
   - `isDeployed`: `boolean`
 
-## Setup and Run
-
-- Requirements: Node.js 18+.
-- Install dependencies:
-
-```bash
-npm i ethers bs58
-```
-
-- Both scripts use `ethers` v6 and the public RPC: `https://evm.rpc-testnet-donut-node1.push.org/`.
-- Run:
-
-```bash
-node PushChain/2-contract-helpers/getOriginForUEA.js
-node PushChain/2-contract-helpers/getUEAForOrigin.js
-```
-
 ## Configuration
 
 - Each script defines:
   - `RPC_URL`: `https://evm.rpc-testnet-donut-node1.push.org/`
   - `FACTORY_ADDRESS`: `0x00000000000000000000000000000000000000eA` (UEAFactory)
-- Update the example address or origin in the script before running.
 
 ## References
 
