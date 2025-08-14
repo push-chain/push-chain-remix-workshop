@@ -10,13 +10,9 @@ tags:
 steps:
   - name: Welcome
     path: 0-welcome
-  - name: Initialize Push Chain
-    path: initialize-push-chain
-  - name: Send Universal Transaction
-    path: 1-send-universal-transaction
-  - name: Contract Call via data
+  - name: UEA Origin Demo (Calling getOriginForUEA from Solidity)
+    path: 1-GetUEAOrigin
+  - name: Contract Helpers: UEAFactory Lookups
     path: 2-contract-helpers
-  - name: Solidity UEAFactory Helper
-    path: 3-uea-inspector
   - name: Read State with viem / ethers
-    path: 4-read-state
+    path: 3-read-state
