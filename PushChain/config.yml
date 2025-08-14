@@ -1,0 +1,12 @@
+---
+id: pushchain
+name: Push Chain
+summary: Initialize the Push Chain core library in Remix
+level: 1
+tags:
+  - JS
+  - Remix
+  - PushChain
+steps:
+  - name: Initialize Push Chain
+    path: initialize-push-chain
