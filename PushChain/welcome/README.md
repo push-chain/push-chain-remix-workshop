@@ -14,11 +14,24 @@ For more information about Universal Transactions, see the [Universal Transactio
 - Network configuration: Point your tools to Push Chain (typically Testnet for workshops)
 - Testnet PC: Ensure you have testnet $PC to try transactions
 
-## UEA and UOA (account types on Push Chain)
+## Account Types on Push Chain
 
-- Universal Executor Accounts (UEAs): Proxy accounts on Push Chain that represent external-chain wallets (your users). They enable users from Ethereum, Solana, and other chains to execute Push Chain logic without needing a native Push Chain wallet.
-- Universal Origin Accounts (UOAs): Chain-agnostic representation of the user’s original source-chain wallet behind each UEA, letting you attribute activity back to the user’s home chain.
+As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports standard Ethereum accounts:
 
-Learn more in Important Concepts → Account Types on Push Chain:
-`https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain`
-****
+- **Externally Owned Accounts (EOAs)**<br />
+  Standard private-key-controlled addresses (e.g. MetaMask wallets).
+
+- **Smart Contract Accounts (Smart Accounts)**<br />
+  On-chain contracts that hold logic (e.g. multisigs, social recovery wallets).
+
+> Additionally, Push Chain innovates by introducing:
+
+- **Universal Executor Accounts (UEAs)**<br />
+  Proxy accounts that represent external chain wallets ( users ) on Push Chain.
+  UEAs let Ethereum, Solana, and other wallets execute Push Chain logic without the need for a native Push Chain wallet. This significantly enhances accessibility and overal UX.
+
+- **Universal Origin Accounts (UOAs)**<br />
+  The original source-chain wallet in chain agnostic address format that is behind each UEA.
+  UOAs let you attribute activity back to the user’s home chain.
+
+Learn more in [Important Concepts → Account Types on Push Chain](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain).
