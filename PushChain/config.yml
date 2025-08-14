@@ -10,3 +10,11 @@ tags:
 steps:
   - name: Initialize Push Chain
     path: initialize-push-chain
+  - name: Send Universal Transaction
+    path: send-universal-transaction
+  - name: Contract Call via data
+    path: contract-call
+  - name: Solidity UEAFactory Helper
+    path: uea-inspector
+  - name: Read State with viem / ethers
+    path: read-state

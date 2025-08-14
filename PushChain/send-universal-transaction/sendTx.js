@@ -1,29 +1,26 @@
-// Import from ESM so it runs in Remix without npm install
 import { PushChain } from 'https://cdn.jsdelivr.net/npm/@pushchain/core@1.1.33/+esm';
 import { ethers } from 'ethers';
 
 async function main() {
-  console.log('Creating Universal Signer (ethers v6)');
-
-  // Create a random wallet (for demo). In real apps, use a user wallet.
+  // Demo signer and origin provider (Sepolia)
   const wallet = ethers.Wallet.createRandom();
-
-  // Origin chain: Ethereum Sepolia
   const provider = new ethers.JsonRpcProvider('https://gateway.tenderly.co/public/sepolia');
   const signer = wallet.connect(provider);
 
-  // Convert ethers signer to Universal Signer
   const universalSigner = await PushChain.utils.signer.toUniversal(signer);
-  console.log('🔑 Got universal signer');
-
-  // Initialize Push Chain SDK for Donut Testnet
   const pushChainClient = await PushChain.initialize(universalSigner, {
     network: PushChain.CONSTANTS.PUSH_NETWORK.TESTNET_DONUT,
   });
 
-  console.log('✅ Push Chain ready');
-  console.log('Execution account (Push):', pushChainClient.universal.account);
-  console.log('Origin account (CAIP-2):', pushChainClient.universal.origin);
+  const value = PushChain.utils.helpers.parseUnits('0.01', 18); // 0.01 PC
+
+  const receipt = await pushChainClient.universal.sendTransaction({
+    to: '0x000000000000000000000000000000000000dEaD',
+    value,
+    progressHook: (p) => console.log(`[${p.level}] ${p.title} — ${p.message}`),
+  });
+
+  console.log('TX sent on Push Chain:', receipt.hash);
 }
 
 main().catch((e) => console.error(e));
