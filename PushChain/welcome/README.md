@@ -6,11 +6,7 @@ Push Chain is the first True Universal Layer 1 blockchain, built as a 100% EVM-c
 
 Users can execute your Push Chain contracts from their home chain (for example, Ethereum Sepolia or Solana Devnet) in a single transaction, using their existing wallets and paying fees in their native tokens. This removes the need for custom bridges, extra wallets, and complex multi-chain UX.
 
-## Docs
-
-- Universal Transactions: `https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/`
-- Contract Helpers: `https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/`
-- Push Chain Docs (overview): `https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/`
+For more information about Universal Transactions, see the [Universal Transactions](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/) documentation.
 
 ## Prerequisites
 
@@ -25,3 +21,4 @@ Users can execute your Push Chain contracts from their home chain (for example, 
 
 Learn more in Important Concepts → Account Types on Push Chain:
 `https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain`
+****
