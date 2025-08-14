@@ -2,13 +2,17 @@
 
 Push Chain is the first True Universal Layer 1 blockchain, built as a 100% EVM-compatible Proof of Stake (PoS) chain. Deploy your Solidity smart contract once on Push Chain and instantly reach users on Ethereum, Solana, and other supported chains without changing on-chain code.
 
-## Why Universal Transactions are powerful
+Before we start, let's understand some important concepts of Push Chain.
 
-Users can execute your Push Chain contracts from their home chain (for example, Ethereum Sepolia or Solana Devnet) in a single transaction, using their existing wallets and paying fees in their native tokens. This removes the need for custom bridges, extra wallets, and complex multi-chain UX.
+## Fee Abstraction and Cross-Chain Execution
 
-For more information about Universal Transactions, see the [Universal Transactions](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/) documentation.
+Push Chain lets users execute contracts without holding $PC (Push Chain native token). Instead, users can initiate transactions from their source chains, such as Ethereum Sepolia or Solana Devnet, and pay gas fees in their native tokens like ETH or SOL.
 
-## Account Types on Push Chain
+When a user signs a transaction from a source chain such as Ethereum Sepolia or Solana Devnet, the orchestrator deploys a smart wallet (UEA) on Push Chain for that user, locks the required gas fees in their native tokens, and executes the contract on Push Chain using the signed payload.
+
+**Your users interact exactly as they would on their home chain**, with no additional steps.
+
+## Account Types
 
 As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports standard Ethereum accounts:
 
@@ -30,7 +34,7 @@ As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports
 
 Learn more in [Important Concepts → Account Types on Push Chain](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain).
 
-## Chain Configuration
+## Faucet and Block Explorer
 
 - Faucet: <https://faucet.push.org/>
 - Block Explorer: <https://donut.push.network/>
