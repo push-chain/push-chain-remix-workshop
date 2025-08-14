@@ -10,19 +10,19 @@ This section wraps up what you built and learned across `Push Chain` and points 
 
 ## Recommended next steps and resources
 
-- **Intro to Push Chain** — key concepts and motivations: [Docs Home](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/)
-- **Quickstart** — deploy and interact in minutes: [Quickstart](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/quickstart/)
-- **Important Concepts** — account types, universal model: [Important Concepts](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/)
+- **Intro to Push Chain** — key concepts and motivations: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/" target="_blank">Docs Home</a>
+- **Quickstart** — deploy and interact in minutes: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/quickstart/" target="_blank">Quickstart</a>
+- **Important Concepts** — account types, universal model: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/" target="_blank">Important Concepts</a>
 - **Tutorials** — end‑to‑end guides:
-  - Universal Counter App: [Tutorial](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/)
+  - Universal Counter App: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/" target="_blank">Tutorial</a>
 - **Build** — SDKs and APIs:
-  - Create Universal Signer: [Guide](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/create-universal-signer/)
-  - Initialize Push Chain Client: [Guide](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/initialize-push-chain-client/)
-  - Initialize EVM Client: [Guide](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/initialize-evm-client/)
-  - Send Universal Transaction: [Guide](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/)
-  - Sign Universal Message: [Guide](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/sign-universal-message/)
-  - Reading Blockchain State: [Guide](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/reading-blockchain-state/)
-  - Contract Helpers: [Guide](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/)
-- **UI Kit** — wallet/connectors and components: [UI Kit](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/ui-kit/)
-- **Knowledge Base** — deep dives and FAQs: [Knowledge Base](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/knowledge-base/)
-- **Changelog** — latest updates: [Changelog](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/changelog/)
+  - Create Universal Signer: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/create-universal-signer/" target="_blank">Guide</a>
+  - Initialize Push Chain Client: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/initialize-push-chain-client/" target="_blank">Guide</a>
+  - Initialize EVM Client: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/initialize-evm-client/" target="_blank">Guide</a>
+  - Send Universal Transaction: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/" target="_blank">Guide</a>
+  - Sign Universal Message: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/sign-universal-message/" target="_blank">Guide</a>
+  - Reading Blockchain State: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/reading-blockchain-state/" target="_blank">Guide</a>
+  - Contract Helpers: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/" target="_blank">Guide</a>
+- **UI Kit** — wallet/connectors and components: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/ui-kit/" target="_blank">UI Kit</a>
+- **Knowledge Base** — deep dives and FAQs: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/knowledge-base/" target="_blank">Knowledge Base</a>
+- **Changelog** — latest updates: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/changelog/" target="_blank">Changelog</a>

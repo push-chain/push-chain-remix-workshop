@@ -4,10 +4,10 @@ In this step, we provide a minimal Solidity contract `UEAFactoryDemo.sol` that d
 
 References:
 
-- Tutorial example: [Universal Counter (contract calling getOriginForUEA)](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/)
-- Concepts: [Account types on Push Chain](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain)
-- Contract Helpers: [UEAFactory → getOriginForUEA](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/#ueafactory--getoriginforuea)
-- Contract Helpers: [UEAFactory → getUEAForOrigin](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/#ueafactory--getueafororigin)
+- Tutorial example: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/" target="_blank">Universal Counter (contract calling getOriginForUEA)</a>
+- Concepts: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain" target="_blank">Account types on Push Chain</a>
+- Contract Helpers: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/#ueafactory--getoriginforuea" target="_blank">UEAFactory → getOriginForUEA</a>
+- Contract Helpers: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/#ueafactory--getueafororigin" target="_blank">UEAFactory → getUEAForOrigin</a>
 
 What the contract does (`UEAFactoryDemo.sol`):
 

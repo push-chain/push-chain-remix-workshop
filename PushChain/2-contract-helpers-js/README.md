@@ -27,4 +27,4 @@ Overview of the two helper scripts that interact with the on-chain `UEAFactory` 
 
 ## References
 
-- Docs: [Contract Helpers → UEAFactory](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/#ueafactory--getueafororigin)
+- Docs: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/#ueafactory--getueafororigin" target="_blank">Contract Helpers → UEAFactory</a>

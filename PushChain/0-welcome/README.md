@@ -32,9 +32,9 @@ As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports
   The original source-chain wallet in chain agnostic address format that is behind each UEA.
   UOAs let you attribute activity back to the user’s home chain.
 
-Learn more in [Important Concepts → Account Types on Push Chain](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain).
+Learn more in <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain" target="_blank">Important Concepts → Account Types on Push Chain</a>.
 
 ## Faucet and Block Explorer
 
-- Faucet: <https://faucet.push.org/>
-- Block Explorer: <https://donut.push.network/>
+- Faucet: <a href="https://faucet.push.org/" target="_blank">https://faucet.push.org/</a>
+- Block Explorer: <a href="https://donut.push.network/" target="_blank">https://donut.push.network/</a>
