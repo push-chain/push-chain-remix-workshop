@@ -8,6 +8,8 @@ tags:
   - Remix
   - PushChain
 steps:
+  - name: Welcome
+    path: welcome
   - name: Initialize Push Chain
     path: initialize-push-chain
   - name: Send Universal Transaction
