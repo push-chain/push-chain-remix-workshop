@@ -11,4 +11,3 @@ How to run:
 1. Open `PushChain/read-state/readStateViem.js` or `PushChain/read-state/readStateEthers.js`.
 2. In the terminal, run `remix.execute()` with the open file.
 3. Check the console for current block number.
-

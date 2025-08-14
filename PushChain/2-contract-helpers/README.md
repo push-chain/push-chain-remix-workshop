@@ -1,26 +1,48 @@
 # Contract Helpers: UEAFactory Lookups
 
-This tutorial now demonstrates two read-only helper calls to the on-chain `UEAFactory` on Push Chain testnet:
+Overview of the two helper scripts that interact with the on-chain `UEAFactory` on Push Chain testnet.
 
-- `getUEAForOrigin`: compute the deterministic UEA address for a given Universal Account ID and check if it’s deployed.
-- `getOriginForUEA`: given any Push Chain address (UEA or native), return the origin information and whether it’s a UEA.
+## `getOriginForUEA.js`
 
-References:
+- Purpose: Given any Push Chain address (UEA or native), return its origin `UniversalAccountId` and whether it corresponds to a UEA.
+- Input: Edit `someAddress` in the script.
+- Returns:
+  - `account`: `{ chainNamespace: string, chainId: string, owner: bytes }`
+  - `isUEA`: `boolean`
+- Note: For non‑EVM chains (e.g., Solana), `owner` is returned in hex. The script shows optional Base58 conversion using `bs58`.
+
+## `getUEAForOrigin.js`
+
+- Purpose: Given a `UniversalAccountId`, compute the deterministic UEA address and check whether it is deployed.
+- Input: Edit the `universalAccountId` object in the script (`chainNamespace`, `chainId`, `owner` as bytes/hex).
+- Returns:
+  - `uea`: `address`
+  - `isDeployed`: `boolean`
+
+## Setup and Run
+
+- Requirements: Node.js 18+.
+- Install dependencies:
+
+```bash
+npm i ethers bs58
+```
+
+- Both scripts use `ethers` v6 and the public RPC: `https://evm.rpc-testnet-donut-node1.push.org/`.
+- Run:
+
+```bash
+node PushChain/2-contract-helpers/getOriginForUEA.js
+node PushChain/2-contract-helpers/getUEAForOrigin.js
+```
+
+## Configuration
+
+- Each script defines:
+  - `RPC_URL`: `https://evm.rpc-testnet-donut-node1.push.org/`
+  - `FACTORY_ADDRESS`: `0x00000000000000000000000000000000000000eA` (UEAFactory)
+- Update the example address or origin in the script before running.
+
+## References
 
 - Docs: [Contract Helpers → UEAFactory](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/#ueafactory--getueafororigin)
-
-Files:
-
-- `PushChain/contract-call/getUEAForOrigin.js`
-- `PushChain/contract-call/getOriginForUEA.js`
-
-How to run (in Remix’s script runner):
-
-1. Open either file above in the editor.
-2. In the terminal, run `remix.execute()` to execute the currently open file.
-3. Check the console output for results.
-
-Notes:
-
-- Both scripts use `ethers` v6 with a public RPC: `https://evm.rpc-testnet-donut-node1.push.org/`.
-- For non-EVM origins (e.g., Solana), `owner` is returned in hex. The `getOriginForUEA.js` example shows optional Base58 conversion using `bs58`.
