@@ -1,5 +1,4 @@
 import { ethers } from 'ethers';
-import { bs58 } from 'bs58';
 
 // ——— CONFIG ———
 const RPC_URL = 'https://evm.rpc-testnet-donut-node1.push.org/';
@@ -26,15 +25,11 @@ async function main() {
   console.log('Result -', JSON.stringify(originResult));
 
   // 4) optional: convert non-evm chain address according to their standards
-  if (originResult[0][0] === 'solana') {
-    // Convert hex-encoded address to base58 address format
-    const bytesAddress = ethers.getBytes(originResult[0][2]);
-    const base58Address = bs58.encode(bytesAddress);
-    console.log('Solana (Base58) Address -', base58Address);
-  }
-
   // Note: If the origin is Solana (chainNamespace === "solana"), the owner address
   // will be in hex format and needs to be converted to base58 for readable format
+  if (originResult[0][0] === 'solana') {
+    console.log('For Solana we need to convert hex-encoded address to base58 address format');
+  }
 }
 
 main().catch(console.error);

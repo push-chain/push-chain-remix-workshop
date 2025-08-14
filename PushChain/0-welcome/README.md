@@ -25,7 +25,7 @@ As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports
 > Additionally, Push Chain innovates by introducing:
 
 - **Universal Executor Accounts (UEAs)**<br />
-  Proxy accounts that represent external chain wallets ( users ) on Push Chain.
+  Proxy accounts that represent external chain wallets (users) on Push Chain.
   UEAs let Ethereum, Solana, and other wallets execute Push Chain logic without the need for a native Push Chain wallet. This significantly enhances accessibility and overal UX.
 
 - **Universal Origin Accounts (UOAs)**<br />
