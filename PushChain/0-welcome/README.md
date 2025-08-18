@@ -12,6 +12,8 @@ When a user signs a transaction from a source chain such as Ethereum Sepolia or 
 
 **Your users interact exactly as they would on their home chain**, with no additional steps.
 
+Learn more in <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#fee-abstraction-and-cross-chain-execution" target="_blank">Important Concepts → Fee Abstraction and Cross-Chain Execution</a>.
+
 ## Account Types
 
 As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports standard Ethereum accounts:
@@ -47,6 +49,8 @@ When you send a universal transaction, the Push Chain SDK automatically:
 3. **Executes the transaction** on Push Chain using your Universal Executor Account (UEA)
 
 This means you can focus on building your application logic rather than dealing with complex cross-chain infrastructure.
+
+Learn more in <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/" target="_blank">PushChain Documentation - Send Universal Transaction</a>.
 
 ### Key Benefits
 
