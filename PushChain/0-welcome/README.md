@@ -34,6 +34,28 @@ As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports
 
 Learn more in <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/#account-types-on-push-chain" target="_blank">Important Concepts → Account Types on Push Chain</a>.
 
+## Universal Transactions
+
+Universal transactions are a core feature of Push Chain that enables **native transactions from any Layer 1 chain**—EVM or non-EVM, including Push Chain itself—without requiring wrapping, bridging, or additional tooling.
+
+### How Universal Transactions Work
+
+When you send a universal transaction, the Push Chain SDK automatically:
+
+1. **Detects your origin chain** (Ethereum, Solana, etc.)
+2. **Estimates gas costs** and orchestrates signatures
+3. **Executes the transaction** on Push Chain using your Universal Executor Account (UEA)
+
+This means you can focus on building your application logic rather than dealing with complex cross-chain infrastructure.
+
+### Key Benefits
+
+- **Cross-chain compatibility**: Send transactions from any L1 chain (EVM or non-EVM)
+- **No bridging required**: Direct native transactions without wrapping or bridging
+- **Simplified development**: No need for complex interoperability tooling
+- **Automatic gas estimation**: SDK handles gas calculations and fee management
+- **Progress tracking**: Built-in progress hooks for transaction lifecycle monitoring
+
 ## Faucet and Block Explorer
 
 - Faucet: <a href="https://faucet.push.org/" target="_blank">https://faucet.push.org/</a>
