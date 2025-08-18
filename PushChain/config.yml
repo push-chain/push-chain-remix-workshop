@@ -16,5 +16,7 @@ steps:
     path: 2-contract-helpers-js
   - name: Universal Counter Example
     path: 3-universal-counter-solidity
+  - name: Send Universal Transaction
+    path: 5-send-universal-transaction
   - name: Conclusion
     path: 4-conclusion
