@@ -64,6 +64,6 @@ const txParams = {
 
 ## References
 
-- [Official Universal Counter Tutorial](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/)
-- [PushChain Documentation - Send Universal Transaction](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/)
-- [PushChain Core SDK](https://www.npmjs.com/package/@pushchain/core)
+- <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/" target="_blank">Official Universal Counter Tutorial</a>
+- <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/" target="_blank">PushChain Documentation - Send Universal Transaction</a>
+- <a href="https://www.npmjs.com/package/@pushchain/core" target="_blank">PushChain Core SDK</a>
