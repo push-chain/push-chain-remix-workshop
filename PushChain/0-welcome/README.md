@@ -52,14 +52,6 @@ This means you can focus on building your application logic rather than dealing 
 
 Learn more in <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/" target="_blank">PushChain Documentation - Send Universal Transaction</a>.
 
-### Key Benefits
-
-- **Cross-chain compatibility**: Send transactions from any L1 chain (EVM or non-EVM)
-- **No bridging required**: Direct native transactions without wrapping or bridging
-- **Simplified development**: No need for complex interoperability tooling
-- **Automatic gas estimation**: SDK handles gas calculations and fee management
-- **Progress tracking**: Built-in progress hooks for transaction lifecycle monitoring
-
 ## Faucet and Block Explorer
 
 - Faucet: <a href="https://faucet.push.org/" target="_blank">https://faucet.push.org/</a>
