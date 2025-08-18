@@ -17,6 +17,6 @@ steps:
   - name: Universal Counter Example
     path: 3-universal-counter-solidity
   - name: Send Universal Transaction
-    path: 5-send-universal-transaction
+    path: 4-send-universal-transaction
   - name: Conclusion
-    path: 4-conclusion
+    path: 5-conclusion
