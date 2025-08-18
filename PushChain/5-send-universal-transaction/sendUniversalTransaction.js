@@ -2,8 +2,7 @@ import { PushChain } from '@pushchain/core';
 import { ethers } from 'ethers';
 import * as readline from 'node:readline/promises';
 
-const RPC_PUSH = 'https://evm.rpc-testnet-donut-node1.push.org/';
-const RECIPIENT = '0x0000000000000000000000000000000000042101';
+const RPC_PUSH = 'https://ethereum-sepolia-rpc.publicnode.com';
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -95,16 +94,17 @@ async function main() {
   };
 
   // wait for user to send funds first
-  await rl.question(':::prompt:::Please send funds to: ' + wallet.address + ' on Push Testnet Donut to continue.');
+  await rl.question(':::prompt:::Please send funds to: ' + wallet.address + ' on Sepolia to continue.');
 
   // 6) Send universal transaction
-  console.log('📤 Sending transaction to:', RECIPIENT);
+  console.log('📤 Interacting with Universal Counter contract:', UNIVERSAL_COUNTER_CONTRACT_ADDRESS);
 
   try {
     // Note: This would fail in playground without funds
     // In production, ensure wallet has funds
     const txResponse = await pushChainClient.universal.sendTransaction(txParams);
     console.log('✅ Transaction sent! Tx:', txResponse);
+    console.log('🔍 View the transaction on PushScan: ' + pushChainClient.explorer.getTransactionUrl(txResponse.hash));
   } catch (error) {
     console.error('❌ Transaction failed:', error);
     // In playground, this will fail without funds
