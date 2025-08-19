@@ -31,4 +31,4 @@ This behavior is natively supported by Push Chain via the UEA system—no extern
 
 ## Reference
 
-- Official tutorial: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/" target="_blank">Universal Counter App</a>
+- For a complete tutorial with a built UI, visit: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/" target="_blank">Universal Counter App</a>
