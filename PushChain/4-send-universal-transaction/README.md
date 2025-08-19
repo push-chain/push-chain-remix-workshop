@@ -40,6 +40,8 @@ The script includes a minimal ABI for the Universal Counter contract:
 
 ### Transaction Parameters
 
+We use the `encodeTxData` helper function to encode the transaction data. This function takes the ABI and function name, then generates the proper calldata for the contract interaction. The `sendTransaction` payload follows the same structure as a standard EVM transaction payload:
+
 ```javascript
 const txParams = {
   to: UNIVERSAL_COUNTER_CONTRACT_ADDRESS,
