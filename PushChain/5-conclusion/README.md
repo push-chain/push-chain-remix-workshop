@@ -7,6 +7,7 @@ This section wraps up what you built and learned across `Push Chain` and points 
 - **Push Chain basics**: How a True Universal Layer 1 enables one deployment to reach users across multiple chains without code changes.
 - **Universal identity and origin**: The platform natively identifies a caller’s origin chain and attributes actions accordingly.
 - **Chain‑aware logic**: How to design contracts and apps that branch behavior based on the caller’s origin (for example, per‑chain counters or permissions).
+- **Universal transactions**: How to send cross-chain transactions from any L1 chain (EVM or non-EVM) to Push Chain without bridging, using Universal Signers and the PushChain SDK.
 
 ## Recommended next steps and resources
 
