@@ -20,3 +20,5 @@ steps:
     path: 4-send-universal-transaction
   - name: Conclusion
     path: 5-conclusion
+  - name: Deploy Contracts
+    path: 6-deploy-contracts
