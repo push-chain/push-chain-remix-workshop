@@ -1,24 +1,24 @@
-# Send Universal Transaction to Universal Counter
+# Send Universal Transaction to Simple Counter Contract
 
-This tutorial demonstrates how to send a Universal Transaction to interact with the Universal Counter smart contract using the PushChain SDK. The script shows how to call a smart contract deployed on Push Chain Donut Testnet from any chain using Universal Transactions.
+This tutorial demonstrates how to send a Universal Transaction to interact with the Simple Counter smart contract using the PushChain SDK. The script shows how to call a smart contract deployed on Push Chain Donut Testnet from any chain using Universal Transactions.
 
 ## What we will do
 
 - **Create a wallet**: Generate a random Ethereum wallet
-- **Convert to Universal Signer**: Transform the wallet into a Universal Signer from Sepoliathat can work across chains
+- **Convert to Universal Signer**: Transform the wallet into a Universal Signer instance
 - **Initialize Push Chain Client**: Set up the client to interact with Push Chain Donut Testnet
 - **Send Universal Transaction**: Call the `increment()` function from a smart contract deployed on Push Chain Donut Testnet from Sepolia
 
-## Universal Counter Contract
+## Simple Counter Contract
 
-The script interacts with the Universal Counter contract deployed at:
-`0x07E7Ca060A4b5BcDa61A6B701305ef0Ee29E1A3e`
+The script interacts with the Simple Counter contract deployed at:
+`0x9F95857e43d25Bb9DaFc6376055eFf63bC0887C1`
 
-This contract maintains separate counters for different origin chains:
+This contract is a basic counter that:
 
-- `countEth`: Counter for Ethereum users
-- `countSol`: Counter for Solana users  
-- `countPC`: Counter for native Push Chain users
+- `increment()`: Increments the counter
+- `reset()`: Resets the counter to zero
+- `countPC()`: Returns the current counter value
 
 ## How it works
 
@@ -26,17 +26,18 @@ This contract maintains separate counters for different origin chains:
 2. **Provider Setup**: Connects to Push Chain Donut Testnet RPC endpoint
 3. **Universal Signer Conversion**: Uses `PushChain.utils.signer.toUniversal()` to create Universal Signer from the wallet
 4. **Client Initialization**: Initializes Push Chain client with the Universal Signer
-5. **Transaction Preparation**: Encodes the `increment()` function call using the contract ABI
+5. **Transaction Preparation**: Encodes the `increment()` function call using the Simple Counter ABI
 6. **Transaction Execution**: Sends the transaction using `pushChainClient.universal.sendTransaction()`
 
 ## Key Components
 
 ### Contract ABI
 
-The script includes a minimal ABI for the Universal Counter contract:
+The script includes a minimal ABI for the Simple Counter contract:
 
-- `increment()`: Function to increment the appropriate counter
-- `countEth()`, `countSol()`, `countPC()`: View functions to read counter values
+- `increment()`: Function to increment the counter
+- `reset()`: Function to reset the counter
+- `countPC()`: View function to read the counter value
 
 ### Transaction Parameters
 
@@ -44,14 +45,20 @@ We use the `encodeTxData` helper function to encode the transaction data. This f
 
 ```javascript
 const txParams = {
-  to: UNIVERSAL_COUNTER_CONTRACT_ADDRESS,
+  to: SIMPLE_COUNTER_CONTRACT_ADDRESS,
   value: BigInt(0),
   data: PushChain.utils.helpers.encodeTxData({
-    abi: UniversalCounterABI,
+    abi: SimpleCounterABI,
     functionName: 'increment',
   }),
 };
 ```
+
+## Example Transaction
+
+This transaction showcases calling `increment()` on the Simple Counter deployed on Push Chain from a Solana wallet using Phantom:
+
+- Explorer link: <https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6>
 
 ## Important Notes
 
@@ -66,6 +73,6 @@ const txParams = {
 
 ## References
 
-- <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/" target="_blank">Official Universal Counter Tutorial</a>
-- <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/" target="_blank">PushChain Documentation - Send Universal Transaction</a>
-- <a href="https://www.npmjs.com/package/@pushchain/core" target="_blank">PushChain Core SDK</a>
+- [Official Simple Counter Tutorial](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-simple-counter/)
+- [PushChain Documentation - Send Universal Transaction](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/)
+- [PushChain Core SDK](https://www.npmjs.com/package/@pushchain/core)

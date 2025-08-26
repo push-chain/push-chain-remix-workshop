@@ -12,8 +12,8 @@ const rl = readline.createInterface({
 async function main() {
   console.log('🚀 Initializing Universal Transaction Example');
 
-  // Define Universal Counter ABI, taking minimal ABI for the demo
-  const UniversalCounterABI = [
+  // Define Simple Counter ABI, taking minimal ABI for the demo
+  const SimpleCounterABI = [
     {
       inputs: [],
       name: 'increment',
@@ -23,15 +23,9 @@ async function main() {
     },
     {
       inputs: [],
-      name: 'countEth',
-      outputs: [
-        {
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
-        },
-      ],
-      stateMutability: 'view',
+      name: 'reset',
+      outputs: [],
+      stateMutability: 'nonpayable',
       type: 'function',
     },
     {
@@ -47,23 +41,10 @@ async function main() {
       stateMutability: 'view',
       type: 'function',
     },
-    {
-      inputs: [],
-      name: 'countSol',
-      outputs: [
-        {
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
-        },
-      ],
-      stateMutability: 'view',
-      type: 'function',
-    },
   ];
 
-  // Contract address for the Universal Counter
-  const UNIVERSAL_COUNTER_CONTRACT_ADDRESS = '0x07E7Ca060A4b5BcDa61A6B701305ef0Ee29E1A3e';
+  // Contract address for the Simple Counter
+  const SIMPLE_COUNTER_CONTRACT_ADDRESS = '0x9F95857e43d25Bb9DaFc6376055eFf63bC0887C1';
 
   // 1) Create a wallet (in production, you'd use your own wallet)
   const wallet = ethers.Wallet.createRandom();
@@ -85,10 +66,10 @@ async function main() {
 
   // 5) Prepare transaction parameters
   const txParams = {
-    to: UNIVERSAL_COUNTER_CONTRACT_ADDRESS,
+    to: SIMPLE_COUNTER_CONTRACT_ADDRESS,
     value: BigInt(0),
     data: PushChain.utils.helpers.encodeTxData({
-      abi: UniversalCounterABI,
+      abi: SimpleCounterABI,
       functionName: 'increment',
     }),
   };
@@ -97,7 +78,7 @@ async function main() {
   await rl.question(':::prompt:::Please send funds to: ' + wallet.address + ' on Sepolia to continue.');
 
   // 6) Send universal transaction
-  console.log('📤 Interacting with Universal Counter contract:', UNIVERSAL_COUNTER_CONTRACT_ADDRESS);
+  console.log('📤 Interacting with Simple Counter contract:', SIMPLE_COUNTER_CONTRACT_ADDRESS);
 
   try {
     // Note: This would fail in playground without funds
