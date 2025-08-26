@@ -22,20 +22,17 @@ You can access this in two ways:
 
 1. From Solidity using contract helpers
 
-- See `1-contract-helpers-solidity/UEAFactoryDemo.sol` for how to use the on-chain UEA Factory interface to discover the origin of the caller.
-- Example interface calls: `getOriginForUEA(address)` and `getUEAForOrigin(UniversalAccountId)`.
+- See `3-contract-helpers-solidity/` for how to use the on-chain UEA Factory interface to discover the origin of the caller.
 
-1. From JavaScript using client helpers
+2. From JavaScript using client helpers
 
-- See `2-contract-helpers-js/` for scripts that resolve origin <-> UEA mappings:
-  - `getOriginForUEA.js`
-  - `getUEAForOrigin.js`
+- See `4-contract-helpers-js/` for scripts that resolve origin <-> UEA mappings.
 
 These helpers let your dApp attribute actions to the correct origin chain and address.
 
 ## Deploying to Push Chain
 
-Push Chain behaves like any other EVM for deployment. Typical flows (e.g. Hardhat, Foundry, Truffle, Remix) work out of the box. Just configure Push Chain RPC and chain info, and deploy.
+Push Chain behaves like any other EVM for deployment. Typical flows (e.g. Remix, Hardhat, Foundry) work out of the box. Just configure Push Chain RPC and chain info, and deploy.
 
 1. Configure your tool with Push Chain RPC
    - Add Push Chain network to your deployment config (RPC URL, chain ID, currency symbol, etc.).
@@ -50,7 +47,7 @@ For step-by-step guides across Remix, Hardhat, and Foundry, see: <a href="https:
 
 That’s it—your contract is live on Push Chain and immediately accessible to users coming from other supported chains.
 
-## Donut Testnet configuration
+## Push Chain Donut Testnet configuration
 
 Use the following network details when deploying to Push Chain Donut Testnet. See full specs in the docs: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/setup/chain-config/">Chain Configuration</a>.
 

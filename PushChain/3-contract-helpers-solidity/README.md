@@ -5,13 +5,27 @@ In this step, we provide a minimal Solidity contract `UEAFactoryDemo.sol` that d
 ## What the contract does (`UEAFactoryDemo.sol`)
 
 - Exposes a function named `discoverOrigin()` that calls `getOriginForUEA(msg.sender)` on the `UEAFactory` at `0x00000000000000000000000000000000000000eA` and returns the origin `UniversalAccountId` plus a boolean indicating whether the caller (`msg.sender`) is a Universal Executor Account (UEA).
-- Exposes a function named `getUEAForOrigin(UniversalAccountId)` that calls `getUEAForOrigin(account)` on the same `UEAFactory` and returns the deterministic `uea` address and `isDeployed` status for that Universal Account.
+- Exposes a function named `discoverUEAForOrigin(UniversalAccountId)` that calls `getUEAForOrigin(account)` on the same `UEAFactory` and returns the deterministic `uea` address and `isDeployed` status for that Universal Account.
 
 ## Notes
 
 - The `UEAFactory` address is the predeploy used by Push Chain.
 - If you want to compare with a more feature-rich example (including state changes), check the linked Universal Counter tutorial.
 - `getUEAForOrigin` can return a deterministic UEA address even if the account is not yet deployed (`isDeployed == false`).
+
+## Sample responses
+
+- `discoverOrigin()` returns:
+
+```json
+[["eip155","11155111","0xfd6c2fe69be13d8be379ccb6c9306e74193ec1a9"], true]
+```
+
+- `discoverUEAForOrigin(UniversalAccountId)` returns:
+
+```json
+["0x3445AEE60c70c9f5A947A28B879ca6B449B0a4ce", false]
+```
 
 ## References
 

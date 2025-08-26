@@ -23,7 +23,7 @@ contract UEAFactoryDemo {
     IUEAFactory constant UEAFACTORY =
         IUEAFactory(0x00000000000000000000000000000000000000eA);
 
-    // Example function name different from "increment"
+    // Demonstrates how to call UEAFactory.getOriginForUEA() from a contract
     function discoverOrigin()
         external
         view
@@ -31,12 +31,16 @@ contract UEAFactoryDemo {
     {
         address caller = msg.sender;
         (originAccount, isUEA) = UEAFACTORY.getOriginForUEA(caller);
+        // Example response (for illustration only):
+        // [["eip155","11155111","0xfd6c2fe69be13d8be379ccb6c9306e74193ec1a9"], true]
     }
 
-    // Demonstrates how to call getUEAForOrigin() from a contract
-    function getUEAForOrigin(
+    // Demonstrates how to call UEAFactory.getUEAForOrigin() from a contract
+    function discoverUEAForOrigin(
         UniversalAccountId memory account
     ) external view returns (address uea, bool isDeployed) {
         (uea, isDeployed) = UEAFACTORY.getUEAForOrigin(account);
+        // Example response (for illustration only):
+        // ["0x3445AEE60c70c9f5A947A28B879ca6B449B0a4ce", false]
     }
 }

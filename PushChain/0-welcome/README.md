@@ -1,14 +1,14 @@
 # Welcome to Push Chain
 
-Push Chain is the first True Universal Layer 1 blockchain, built as a 100% EVM-compatible Proof of Stake (PoS) chain. Deploy your Solidity smart contract once on Push Chain and instantly reach users on Ethereum, Solana, and other supported chains without changing on-chain code.
+Push Chain is the first True Universal Layer 1 blockchain, built as a 100% EVM-compatible Proof of Stake (PoS) chain. **Deploy your Solidity smart contract once on Push Chain and instantly reach users on Ethereum, Base, Arbitrum, Optimism, Solana, and other supported chains without changing on-chain code.**
 
 Before we start, let's understand some important concepts of Push Chain.
 
 ## Fee Abstraction and Cross-Chain Execution
 
-Push Chain lets users execute contracts without holding $PC (Push Chain native token). Instead, users can initiate transactions from their source chains, such as Ethereum Sepolia or Solana Devnet, and pay gas fees in their native tokens like ETH or SOL.
+Push Chain lets users execute contracts without holding $PC (Push Chain native token). Instead, users can initiate transactions from their source chains, such as Ethereum Sepolia, Base or Solana Devnet, and pay gas fees in their native tokens like ETH or SOL.
 
-When a user signs a transaction from a source chain such as Ethereum Sepolia or Solana Devnet, the orchestrator deploys a smart wallet (UEA) on Push Chain for that user, locks the required gas fees in their native tokens, and executes the contract on Push Chain using the signed payload.
+When a user signs a transaction from a source chain such as Ethereum Sepolia, Base or Solana Devnet, the orchestrator deploys a smart wallet (UEA) on Push Chain for that user, locks the required gas fees in their native tokens, and executes the contract on Push Chain using the signed payload.
 
 **Your users interact exactly as they would on their home chain**, with no additional steps.
 
@@ -28,7 +28,7 @@ As an EVM-compatible Universal Layer 1 blockchain, Push Chain naturally supports
 
 - **Universal Executor Accounts (UEAs)**<br />
   Proxy accounts that represent external chain wallets (users) on Push Chain.
-  UEAs let Ethereum, Solana, and other wallets execute Push Chain logic without the need for a native Push Chain wallet. This significantly enhances accessibility and overal UX.
+  UEAs let Ethereum, Base, Arbitrum, Optimism, Solana, and other wallets execute Push Chain logic without the need for a native Push Chain wallet. This significantly enhances accessibility and overal UX.
 
 - **Universal Origin Accounts (UOAs)**<br />
   The original source-chain wallet in chain agnostic address format that is behind each UEA.
@@ -44,15 +44,10 @@ Universal transactions are a core feature of Push Chain that enables **native tr
 
 When you send a universal transaction, the Push Chain SDK automatically:
 
-1. **Detects your origin chain** (Ethereum, Solana, etc.)
+1. **Detects your origin chain** (Ethereum, Base, Arbitrum, Optimism, Solana, etc.)
 2. **Estimates gas costs** and orchestrates signatures
 3. **Executes the transaction** on Push Chain using your Universal Executor Account (UEA)
 
 This means you can focus on building your application logic rather than dealing with complex cross-chain infrastructure.
 
 Learn more in <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/" target="_blank">PushChain Documentation - Send Universal Transaction</a>.
-
-## Faucet and Block Explorer
-
-- Faucet: <a href="https://faucet.push.org/" target="_blank">https://faucet.push.org/</a>
-- Block Explorer: <a href="https://donut.push.network/" target="_blank">https://donut.push.network/</a>
