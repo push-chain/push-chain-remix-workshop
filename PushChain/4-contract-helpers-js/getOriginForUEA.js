@@ -17,11 +17,11 @@ async function main() {
   const factory = new ethers.Contract(FACTORY_ADDRESS, IUEAFactoryABI, provider);
 
   // 2) <insert any address ( UEA or Native Addresses) to check its origin details >
-  const someAddress = '0x5ef53CF4B369E507C34C3eF5B24791574dCd415E';
+  const address = '0x5ef53CF4B369E507C34C3eF5B24791574dCd415E';
 
   // 3) call getOriginForUEA
   console.log('Calling getOriginForUEA on PushChain');
-  const originResult = await factory.getOriginForUEA(someAddress);
+  const originResult = await factory.getOriginForUEA(address);
   console.log('Note: The address returned are always in hex format even for non-EVM chains.');
   console.log('Result -', JSON.stringify(originResult));
 

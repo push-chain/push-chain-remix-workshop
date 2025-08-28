@@ -3,7 +3,7 @@ Overview of the two helper scripts that interact with the on-chain `UEAFactory` 
 ## `getOriginForUEA.js`
 
 - Purpose: Given any Push Chain address (UEA or native), return its origin `UniversalAccountId` and whether it corresponds to a UEA.
-- Input: Edit `someAddress` in the script.
+- Input: Uses example `address`.
 - Returns:
   - `account`: `{ chainNamespace: string, chainId: string, owner: bytes }`
   - `isUEA`: `boolean`
@@ -12,7 +12,7 @@ Overview of the two helper scripts that interact with the on-chain `UEAFactory` 
 ## `getUEAForOrigin.js`
 
 - Purpose: Given a `UniversalAccountId`, compute the deterministic UEA address and check whether it is deployed.
-- Input: Edit the `universalAccountId` object in the script (`chainNamespace`, `chainId`, `owner` as bytes/hex).
+- Input: Uses example `universalAccountId` object (can be customized in the script with `chainNamespace`, `chainId`, `owner` as bytes/hex).
 - Returns:
   - `uea`: `address`
   - `isDeployed`: `boolean`
