@@ -1,4 +1,4 @@
-In this step, we provide a minimal Solidity contract `UEAFactoryDemo.sol` that demonstrates how to call the Push Chain `UEAFactory.getOriginForUEA()` and `UEAFactory.getUEAForOrigin()` functions from on-chain code.
+In this step, we provide a minimal Solidity contract `UEAFactoryDemo.sol` that demonstrates how to call two essential Push Chain `UEAFactory` functions from on-chain code: `getOriginForUEA()` which determines if an address is a native Push Chain account or a Universal Executor Account (UEA) representing an external chain user, and returns the source chain identity information; and `getUEAForOrigin()` which computes the deterministic UEA address for any Universal Account and checks its deployment status on Push Chain.
 
 ## What the contract does (`UEAFactoryDemo.sol`)
 
