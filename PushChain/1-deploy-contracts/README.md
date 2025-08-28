@@ -22,11 +22,11 @@ You can access this in two ways:
 
 1. From Solidity using contract helpers
 
-- See `3-contract-helpers-solidity/` for how to use the on-chain UEA Factory interface to discover the origin of the caller.
+- See the next section `Universal Account Discovery with Solidity` for how to use the on-chain UEA Factory interface to discover the origin of the caller from Solidity.
 
 2. From JavaScript using client helpers
 
-- See `4-contract-helpers-js/` for scripts that resolve origin <-> UEA mappings.
+- See the section `JavaScript UEAFactory Helper Scripts` for scripts that resolve origin <-> UEA mappings from JavaScript.
 
 These helpers let your dApp attribute actions to the correct origin chain and address.
 
