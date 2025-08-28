@@ -10,7 +10,6 @@ This section wraps up what you built and learned across `Push Chain` and points 
 ## Recommended next steps and resources
 
 - **Intro to Push Chain** — key concepts and motivations: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/" target="_blank">Docs Home</a>
-- **Quickstart** — deploy and interact in minutes: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/quickstart/" target="_blank">Quickstart</a>
 - **Important Concepts** — account types, universal model: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/important-concepts/" target="_blank">Important Concepts</a>
 - **Tutorials** — end‑to‑end guides:
   - Universal Counter App: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-universal-counter/" target="_blank">Tutorial</a>
@@ -22,6 +21,4 @@ This section wraps up what you built and learned across `Push Chain` and points 
   - Sign Universal Message: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/sign-universal-message/" target="_blank">Guide</a>
   - Reading Blockchain State: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/reading-blockchain-state/" target="_blank">Guide</a>
   - Contract Helpers: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/contract-helpers/" target="_blank">Guide</a>
-- **UI Kit** — wallet/connectors and components: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/ui-kit/" target="_blank">UI Kit</a>
-- **Knowledge Base** — deep dives and FAQs: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/knowledge-base/" target="_blank">Knowledge Base</a>
-- **Changelog** — latest updates: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/changelog/" target="_blank">Changelog</a>
+- **UI Kit SDK** — React Hooks and components to easily add Push Chain to your dApp: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/ui-kit/" target="_blank">UI Kit</a>
