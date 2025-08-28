@@ -2,7 +2,7 @@
 
 Push Chain is a True Universal Layer 1 that is 100% EVM-compatible. **That means you can deploy your existing Solidity contracts to Push Chain with zero on-chain code changes: same Solidity, same ABI, same bytecode. Simply switch your deployment network to Push Chain and deploy as you would on any other EVM.**
 
-Learn more in the official docs: <a href="<https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/>" target="_blank>Intro to Push Chain</a>.
+Learn more in the official docs: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/" target="_blank">Intro to Push Chain</a>.
 
 ## Why deploy on Push Chain?
 
