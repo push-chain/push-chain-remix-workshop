@@ -2,7 +2,7 @@
 
 Push Chain is a True Universal Layer 1 that is 100% EVM-compatible. **That means you can deploy your existing Solidity contracts to Push Chain with zero on-chain code changes: same Solidity, same ABI, same bytecode. Simply switch your deployment network to Push Chain and deploy as you would on any other EVM.**
 
-Learn more in the official docs: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/">Intro to Push Chain</a>.
+Learn more in the official docs: <a href="<https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/>" target="_blank>Intro to Push Chain</a>.
 
 ## Why deploy on Push Chain?
 
@@ -43,13 +43,13 @@ Push Chain behaves like any other EVM for deployment. Typical flows (e.g. Remix,
 4. Deploy
    - Use your standard deploy command.
 
-For step-by-step guides across Remix, Hardhat, and Foundry, see: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/setup/smart-contract-environment/">Smart Contract Environment</a>.
+For step-by-step guides across Remix, Hardhat, and Foundry, see: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/setup/smart-contract-environment/" target="_blank">Smart Contract Environment</a>.
 
 That’s it—your contract is live on Push Chain and immediately accessible to users coming from other supported chains.
 
 ## Push Chain Donut Testnet configuration
 
-Use the following network details when deploying to Push Chain Donut Testnet. See full specs in the docs: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/setup/chain-config/">Chain Configuration</a>.
+Use the following network details when deploying to Push Chain Donut Testnet. See full specs in the docs: <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/setup/chain-config/" target="_blank">Chain Configuration</a>.
 
 - Network Name: Push Chain Donut Testnet
 - RPC URLs:

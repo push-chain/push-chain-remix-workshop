@@ -58,12 +58,12 @@ const txParams = {
 
 This transaction showcases calling `increment()` on the Simple Counter deployed on Push Chain from a Solana wallet using Phantom:
 
-- Explorer link: <https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6>
+- Explorer link: <a href="https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6" target="_blank">https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6</a>
 
 ## Important Notes
 
 - **Funding required**: The generated wallet needs PC tokens to execute transactions
-- **Get testnet tokens**: Visit [Push Chain Faucet](https://faucet.push.org/) to get PC tokens for testing
+- **Get testnet tokens**: Visit <a href="https://faucet.push.org/" target="_blank">Push Chain Faucet</a> to get PC tokens for testing
 
 ## Universal Transaction Benefits
 
@@ -73,6 +73,6 @@ This transaction showcases calling `increment()` on the Simple Counter deployed 
 
 ## References
 
-- [Official Simple Counter Tutorial](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-simple-counter/)
-- [PushChain Documentation - Send Universal Transaction](https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/)
-- [PushChain Core SDK](https://www.npmjs.com/package/@pushchain/core)
+- <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/tutorials/tutorial-simple-counter/" target="_blank">Official Simple Counter Tutorial</a>
+- <a href="https://pushchain.github.io/push-chain-website/pr-preview/pr-1067/docs/chain/build/send-universal-transaction/" target="_blank">PushChain Documentation - Send Universal Transaction</a>
+- <a href="https://www.npmjs.com/package/@pushchain/core" target="_blank">PushChain Core SDK</a>
