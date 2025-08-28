@@ -4,7 +4,7 @@ Learn how to execute Universal Transactions with PushChain. This tutorial guides
 
 ## What we will do
 
-- **Create a wallet**: Generate a random Ethereum wallet
+- **Create a wallet**: Generate a random Ethereum wallet on Sepolia
 - **Convert to Universal Signer**: Transform the wallet into a Universal Signer instance
 - **Initialize Push Chain Client**: Set up the client to interact with Push Chain Donut Testnet
 - **Send Universal Transaction**: Call the `increment()` function from a smart contract deployed on Push Chain Donut Testnet from Sepolia
@@ -16,7 +16,7 @@ The script interacts with the Simple Counter contract deployed at:
 
 ## How it works
 
-1. **Wallet Creation**: Creates a random wallet using `ethers.Wallet.createRandom()`
+1. **Wallet Creation**: Creates a random wallet on Sepolia using `ethers.Wallet.createRandom()`
 2. **Provider Setup**: Connects to Push Chain Donut Testnet RPC endpoint
 3. **Universal Signer Conversion**: Uses `PushChain.utils.signer.toUniversal()` to create Universal Signer from the wallet
 4. **Client Initialization**: Initializes Push Chain client with the Universal Signer
