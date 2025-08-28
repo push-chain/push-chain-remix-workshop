@@ -32,7 +32,7 @@ These helpers let your dApp attribute actions to the correct origin chain and ad
 
 ## Deploying to Push Chain
 
-Push Chain behaves like any other EVM for deployment. Typical flows (e.g. Remix, Hardhat, Foundry) work out of the box. Just configure Push Chain RPC and chain info, and deploy.
+Push Chain behaves like any other EVM for deployment. Typical flows work out of the box. Just configure Push Chain RPC and chain info, and deploy.
 
 1. Configure your tool with Push Chain RPC
    - Add Push Chain network to your deployment config (RPC URL, chain ID, currency symbol, etc.).
