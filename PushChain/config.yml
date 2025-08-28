@@ -14,11 +14,11 @@ steps:
     path: 1-deploy-contracts
   - name: Send Universal Transaction
     path: 2-send-universal-transaction
-  - name: UEA Origin Demo (Calling getOriginForUEA from Solidity)
+  - name: Universal Account Discovery with Solidity
     path: 3-contract-helpers-solidity
-  - name: Contract Helpers UEAFactory Lookups
+  - name: JavaScript UEAFactory Helper Scripts
     path: 4-contract-helpers-js
-  - name: Universal Counter Example
+  - name: Universal Counter Smart Contract
     path: 6-universal-counter-solidity
   - name: Conclusion
     path: 7-conclusion

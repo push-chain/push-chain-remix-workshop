@@ -1,4 +1,4 @@
-# UEA Factory Demo (Calling getOriginForUEA and getUEAForOrigin from Solidity)
+# Universal Account Discovery with Solidity
 
 In this step, we provide a minimal Solidity contract `UEAFactoryDemo.sol` that demonstrates how to call the Push Chain `UEAFactory.getOriginForUEA()` and `UEAFactory.getUEAForOrigin()` functions from on-chain code.
 
