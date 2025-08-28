@@ -1,5 +1,3 @@
-# Universal Counter Smart Contract
-
 On this section, we will build the `UniversalCounter.sol` contract, a Push Chain smart contract that keeps separate counters for callers from different origin chains and a total across all chains.
 
 ## What it does

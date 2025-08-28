@@ -1,5 +1,3 @@
-# Welcome to Push Chain
-
 Push Chain is the first True Universal Layer 1 blockchain, built as a 100% EVM-compatible Proof of Stake (PoS) chain. **Deploy your Solidity smart contract once on Push Chain and instantly reach users on Ethereum, Base, Arbitrum, Optimism, Solana, and other supported chains without changing on-chain code.**
 
 Before we start, let's understand some important concepts of Push Chain.

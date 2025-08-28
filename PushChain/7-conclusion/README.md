@@ -1,5 +1,3 @@
-# Conclusion
-
 This section wraps up what you built and learned across `Push Chain` and points you to next resources.
 
 ## What you learned

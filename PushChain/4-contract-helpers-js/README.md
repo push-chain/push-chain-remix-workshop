@@ -1,5 +1,3 @@
-# JavaScript UEAFactory Helper Scripts
-
 Overview of the two helper scripts that interact with the on-chain `UEAFactory` on Push Chain testnet.
 
 ## `getOriginForUEA.js`

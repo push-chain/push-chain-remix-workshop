@@ -8,11 +8,11 @@ tags:
   - Remix
   - PushChain
 steps:
-  - name: Welcome
+  - name: Welcome to Push Chain
     path: 0-welcome
-  - name: Deploy Contracts
+  - name: Deploy Contracts on Push Chain
     path: 1-deploy-contracts
-  - name: Send Universal Transaction
+  - name: Send Universal Transaction to Simple Counter Contract
     path: 2-send-universal-transaction
   - name: Universal Account Discovery with Solidity
     path: 3-contract-helpers-solidity
