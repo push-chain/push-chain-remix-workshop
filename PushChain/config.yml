@@ -16,8 +16,8 @@ steps:
     path: 2-send-universal-transaction
   - name: Universal Account Discovery with Solidity
     path: 3-contract-helpers-solidity
-  - name: JavaScript UEAFactory Helper Scripts
-    path: 4-contract-helpers-js
+  - name: JavaScript Account Conversion Helpers
+    path: 4-utility-functions-js
   - name: Universal Counter Smart Contract
     path: 6-universal-counter-solidity
   - name: Conclusion
