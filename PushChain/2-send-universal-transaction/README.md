@@ -12,7 +12,7 @@ Learn how to execute Universal Transactions with PushChain. This tutorial guides
 ## Simple Counter Contract
 
 The script interacts with the Simple Counter contract deployed at:
-<a href="https://donut.push.network/address/0x9F95857e43d25Bb9DaFc6376055eFf63bC0887C1?tab=index" target="_blank">`0x9F95857e43d25Bb9DaFc6376055eFf63bC0887C1`</a>
+<a href="https://donut.push.network/address/0x9F95857e43d25Bb9DaFc6376055eFf63bC0887C1?tab=index">`0x9F95857e43d25Bb9DaFc6376055eFf63bC0887C1`</a>
 
 ## How it works
 
@@ -53,7 +53,8 @@ const txParams = {
 
 This transaction showcases calling `increment()` on the Simple Counter deployed on Push Chain from a Solana wallet using Phantom:
 
-- Explorer link: <a href="https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6" target="_blank">https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6</a>
+- **Transaction Hash**: `0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6`
+- **View on Explorer**: <a href="https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6" target="_blank">donut.push.network</a>
 
 ## Important Notes
 
