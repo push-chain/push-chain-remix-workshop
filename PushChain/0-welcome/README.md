@@ -6,9 +6,9 @@ Before we start, let's understand some important concepts of Push Chain.
 
 ## Fee Abstraction and Cross-Chain Execution
 
-Push Chain lets users execute contracts without holding $PC (Push Chain native token). Instead, users can initiate transactions from their source chains, such as Ethereum Sepolia, Base or Solana Devnet, and pay gas fees in their native tokens like ETH or SOL.
+Push Chain lets users execute contracts without holding $PC (Push Chain native token). Instead, users can initiate transactions from their source chains, such as Ethereum, Base or Solana, and pay gas fees in their native tokens like ETH or SOL.
 
-When a user signs a transaction from a source chain such as Ethereum Sepolia, Base or Solana Devnet, the orchestrator deploys a smart wallet (UEA) on Push Chain for that user, locks the required gas fees in their native tokens, and executes the contract on Push Chain using the signed payload.
+When a user signs a transaction from a source chain such as Ethereum, Base or Solana, the orchestrator deploys a smart wallet (UEA) on Push Chain for that user, locks the required gas fees in their native tokens, and executes the contract on Push Chain using the signed payload.
 
 **Your users interact exactly as they would on their home chain**, with no additional steps.
 
