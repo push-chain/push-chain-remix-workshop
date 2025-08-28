@@ -1,6 +1,6 @@
 # Send Universal Transaction to Simple Counter Contract
 
-This tutorial demonstrates how to send a Universal Transaction to interact with the Simple Counter smart contract using the PushChain SDK. The script shows how to call a smart contract deployed on Push Chain Donut Testnet from any chain using Universal Transactions.
+Learn how to execute Universal Transactions with PushChain. This tutorial guides you through interacting with a smart contract deployed on Push Chain Donut Testnet from any blockchain using the powerful Universal Transaction feature. We'll accomplish this using the PushChain SDK that makes it easy to bridge traditional blockchain silos and interact seamlessly across chains.
 
 ## What we will do
 
