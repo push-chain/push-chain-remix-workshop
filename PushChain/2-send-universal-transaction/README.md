@@ -51,10 +51,7 @@ const txParams = {
 
 ## Example Transaction
 
-This transaction showcases calling `increment()` on the Simple Counter deployed on Push Chain from a Solana wallet using Phantom:
-
-- **Transaction Hash**: `0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6`
-- **View on Explorer**: <a href="https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6" target="_blank">donut.push.network</a>
+This transaction showcases calling `increment()` on the Simple Counter deployed on Push Chain from a Solana wallet using Phantom, see <a href="https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6" target="_blank">donut.push.network for the transaction details</a>.
 
 ## Important Notes
 
