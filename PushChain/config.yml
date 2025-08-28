@@ -16,7 +16,7 @@ steps:
     path: 2-send-universal-transaction
   - name: UEA Origin Demo (Calling getOriginForUEA from Solidity)
     path: 3-contract-helpers-solidity
-  - name: Contract Helpers: UEAFactory Lookups
+  - name: Contract Helpers UEAFactory Lookups
     path: 4-contract-helpers-js
   - name: Universal Counter Example
     path: 6-universal-counter-solidity
