@@ -1,13 +1,7 @@
 import { PushChain } from '@pushchain/core';
 import { ethers } from 'ethers';
-import * as readline from 'node:readline/promises';
 
 const RPC_PUSH = 'https://ethereum-sepolia-rpc.publicnode.com';
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
 
 async function main() {
   console.log('🚀 Initializing Universal Transaction Example');
@@ -48,7 +42,7 @@ async function main() {
 
   // 1) Create a wallet (in production, you'd use your own wallet)
   const wallet = ethers.Wallet.createRandom();
-  console.log('📝 Created wallet:', wallet.address);
+  console.log(`📝 Created wallet: ${wallet.address}`);
 
   // 2) Set up provider and connect wallet
   const provider = new ethers.JsonRpcProvider(RPC_PUSH);
@@ -75,17 +69,17 @@ async function main() {
   };
 
   // wait for user to send funds first
-  await rl.question(':::prompt:::Please send funds to: ' + wallet.address + ' on Sepolia to continue.');
+  await waitForFunding(provider, wallet.address);
 
   // 6) Send universal transaction
-  console.log('📤 Interacting with Simple Counter contract:', SIMPLE_COUNTER_CONTRACT_ADDRESS);
+  console.log(`📤 Interacting with Simple Counter contract: ${SIMPLE_COUNTER_CONTRACT_ADDRESS}`);
 
   try {
     // Note: This would fail in playground without funds
     // In production, ensure wallet has funds
     const txResponse = await pushChainClient.universal.sendTransaction(txParams);
-    console.log('✅ Transaction sent! Tx:', txResponse);
-    console.log('🔍 View the transaction on PushScan: ' + pushChainClient.explorer.getTransactionUrl(txResponse.hash));
+    console.log(`✅ Transaction sent! Tx: ${txResponse}`);
+    console.log(`🔍 View the transaction on PushScan: ${pushChainClient.explorer.getTransactionUrl(txResponse.hash)}`);
   } catch (error) {
     console.error('❌ Transaction failed:', error);
     // In playground, this will fail without funds
@@ -94,3 +88,17 @@ async function main() {
 }
 
 main().catch(console.error);
+
+async function waitForFunding(provider, address) {
+  console.log(`🔔 Waiting to receive Ethereum Sepolia funds at ${address} to send the Universal Transaction...`);
+
+  const timeout = Date.now() + 10 * 60_000; // 10 minutes
+  while (Date.now() < timeout) {
+    const balance = await provider.getBalance(address).catch(() => 0n);
+    console.log(`💰 Current balance: ${balance.toString()} wei`);
+    if (balance > 0n) return balance;
+    await new Promise((r) => setTimeout(r, 5000));
+  }
+
+  throw new Error('⏱️ Timeout: No funds received. Please try again.');
+}
