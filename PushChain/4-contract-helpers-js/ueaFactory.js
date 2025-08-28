@@ -48,7 +48,7 @@ async function main() {
 
   // 2) Example 1: getOriginForUEA
   // Insert any address (UEA or Native Addresses) to check its origin details
-  const address = '0x5ef53CF4B369E507C34C3eF5B24791574dCd415E';
+  const address = '0x61979c38a51c4dB3ffCB25D11061DCDB7a8c6504';
   await getOriginForUEA(factory, address);
 
   // 3) Example 2: getUEAForOrigin
