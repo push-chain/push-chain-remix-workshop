@@ -1,5 +1,18 @@
 Learn how to use the PushChain SDK to send cross-chain Universal Transactions from Sepolia to a Simple Counter contract on the Push Chain Donut Testnet.
 
+## Prerequisites
+
+Before running the script, make sure you have the following in place:
+
+- **Funding required**: The generated wallet needs PC tokens to execute transactions.
+- **Get testnet tokens**: Visit <a href="https://faucet.push.org/" target="_blank">Push Chain Faucet</a> to get PC tokens for testing.
+
+## Universal Transaction Benefits
+
+- **Cross-chain compatibility**: Send transactions from any chain (EVM or non-EVM).
+- **No bridging required**: Direct native transactions without wrapping or bridging.
+- **Simplified development**: No need for complex interoperability tooling.
+
 ## What we will do
 
 - **Create a wallet**: Generate a random Ethereum wallet on Sepolia
@@ -50,17 +63,6 @@ const txParams = {
 ## Example Transaction
 
 This transaction showcases calling `increment()` on the Simple Counter deployed on Push Chain from a Solana wallet using Phantom, see <a href="https://donut.push.network/tx/0x8fde3a025ce719c33cf9436763016f0e2ebb16563a6be44dc3b48c45a37878c6" target="_blank">donut.push.network for the transaction details</a>.
-
-## Important Notes
-
-- **Funding required**: The generated wallet needs PC tokens to execute transactions
-- **Get testnet tokens**: Visit <a href="https://faucet.push.org/" target="_blank">Push Chain Faucet</a> to get PC tokens for testing
-
-## Universal Transaction Benefits
-
-- **Cross-chain compatibility**: Send transactions from any L1 chain (EVM or non-EVM)
-- **No bridging required**: Direct native transactions without wrapping or bridging
-- **Simplified development**: No need for complex interoperability tooling
 
 ## References
 
