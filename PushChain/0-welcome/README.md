@@ -2,9 +2,9 @@ You’re a Solidity developer who wants your contracts to reach users everywhere
 
 ## Why Push Chain matters to you
 
-- **Single deployment, multi‑chain reach**: Ship one Solidity contract on Push Chain and make it available to users coming from many different chains.
-- **No contract rewrites**: You keep your existing EVM tooling and patterns; you don’t need to maintain separate versions of your contracts per ecosystem.
-- **Fee abstraction for your users**: Users pay gas in the native token of the chain they are already on, while your contract executes on Push Chain.
+- **Single deployment, multi‑chain reach**: Deploy your existing Solidity contract once on Push Chain and instantly reach users from Ethereum, Base, Arbitrum, Optimism, Solana, and other supported chains—without managing separate deployments or custom bridges.
+- **No contract rewrites (EVM compatible)**: Keep your existing Solidity, ABI, and bytecode. Push Chain is 100% EVM-compatible, so you don’t need to change on‑chain code or re‑architect your contracts to deploy here.
+- **Wallet and fee abstraction for your users**: Users connect using familiar wallets like MetaMask or Phantom and pay gas in the native token of their home chain; they never need to hold a special Push Chain gas token.
 
 ## Fee abstraction and cross‑chain execution
 
